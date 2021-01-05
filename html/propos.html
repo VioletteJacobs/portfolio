@@ -6,38 +6,42 @@
     <title>Violette Jacobs</title>
     <link rel="stylesheet" href="./../public/css/app.css">
 </head>
-<body>
-    <header>
+<body class="bodypropos">
+  <header>
+    <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
-            <div class="p-4">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./propos.html">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./cv.html">Compétences</a>
-                    </li>                  
-                    <li class="nav-item">
-                      <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./parcours.html">Parcours</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./contacts.html">contacts</a>
-                    </li>
-                </ul>
-            </div>
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
           </div>
-          <nav class="navbar navbar-dark ">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </nav>
         </div>
-    </header>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+  </div>
+</header>
+    <section class="flex sectionpropos">
+        <div class="photo">
+            <img class= "margin10"src="../public/img/photo-1506506200949-df8644f002d1.jpeg" alt="">
+        </div>
+        <div class="presentation">
+            <h2>À propos de moi...</h2>
+            <p>Je suis 
+             <span>Violette Jacobs </span> codeuse full-stack formée à Molengeek ainsi qu'en autodidacte. Je maître les languages clés de programmation: JavaScript, PHP, Python... Je me suis également formée eu SEO et base du branding et de la communication afin d'apporter un aspect complémentaire à mes compétences techniques. Travailleuse sociale de formation, j'ai souhaité réorienter mon parcours afin de répondre à d'autres challenges après avoir travaillé durant deux ans comme travailleuse sociale de rue. 
+            J'aime voyager, je fais de l'impro depuis 2 ans et je suis donc adepte des soirées théâtre ou cinéma.  Grande créative j'aime tout ce qui est manuel et me permet de créer des choses avec mes dix-doigts. 
+            </p>
+            <div>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+
+            </div>
+            <button>Télécharger mon CV</button>
+
+        </div>
+    </section>
 
         <!-- Jquery -->
 	<script src="./node_modules/jquery/dist/jquery.js"></script> 
