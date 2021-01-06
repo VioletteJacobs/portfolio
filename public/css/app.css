@@ -16038,6 +16038,10 @@ readers do not read off random characters that represent icons */
   flex-direction: column;
 }
 
+.size20 {
+  font-size: 20px;
+}
+
 .size35 {
   font-size: 35px;
 }
@@ -16063,7 +16067,7 @@ readers do not read off random characters that represent icons */
 }
 
 .jaune {
-  color: #D19525;
+  color: #e3a92b;
 }
 
 .margin10 {
@@ -16072,6 +16076,16 @@ readers do not read off random characters that represent icons */
 
 .padding10 {
   padding: 10px;
+}
+
+.padding70 {
+  padding: 70px;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
 }
 
 body {
@@ -16086,6 +16100,83 @@ body section .prenom {
 body section .propositions a {
   color: white;
   text-decoration: none;
+}
+
+.bodypropos {
+  background-color: white;
+  color: black;
+}
+.bodypropos .headerpropos {
+  color: black;
+}
+.bodypropos .sectionpropos .photo img {
+  height: 600px;
+  border-right: 10px solid white;
+  border-top: 10px solid white;
+}
+.bodypropos .sectionpropos .presentation {
+  color: black;
+}
+.bodypropos .sectionpropos .presentation #nom {
+  font-weight: bold;
+}
+.bodypropos .sectionpropos .presentation #dev {
+  color: #d3a84a;
+}
+.bodypropos .sectionpropos .presentation #languages {
+  font-weight: bold;
+}
+.bodypropos .sectionpropos .reseaux a {
+  text-decoration: none;
+  color: #e3a92b;
+}
+.bodypropos .sectionCube .passions {
+  background-color: #fff4cf;
+}
+.bodypropos .sectionCube .container {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 100px auto 0;
+}
+.bodypropos .sectionCube .container .cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 10s infinite linear;
+}
+.bodypropos .sectionCube .container .cube .top {
+  background-color: #d3a84a;
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bodypropos .sectionCube .container .cube .bottom {
+  background-color: #e3a92b;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+.bodypropos .sectionCube .container .cube .right {
+  background-color: #355746;
+  transform: rotateY(90deg) translateZ(100px);
+}
+.bodypropos .sectionCube .container .cube .left {
+  background-color: #7f8b75;
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.bodypropos .sectionCube .container .cube .front {
+  background-color: #e3a92b;
+  transform: rotateX(0deg) translateZ(100px);
+}
+.bodypropos .sectionCube .container .cube .back {
+  background-color: #355746;
+  transform: rotateX(-180deg) translateZ(100px);
+}
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

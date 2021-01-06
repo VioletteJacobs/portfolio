@@ -1,6 +1,68 @@
 .bodypropos
+    background-color: white
+    color: black
     .headerpropos
-        .sectionpropos
-            .photo
-            .presentation
-                background-color: white
+        color: black
+    .sectionpropos
+        .photo
+
+            img
+                height: 600px
+                border-right: 10px solid white
+                border-top:  10px solid white
+        .presentation
+            color: black
+            #nom
+                font-weight: bold
+            #dev
+                color: $jaune2
+            #languages
+                font-weight: bold
+        .reseaux
+
+            a
+                text-decoration: none
+                color: $jaune
+    .sectionCube
+        .passions
+            background-color: $beige
+        .container
+            width: 200px
+            height: 200px
+            perspective: 1000px
+            margin: 100px auto 0
+            .cube
+                width: 100%
+                height: 100%
+                position: relative
+                transform-style: preserve-3d
+                animation: spin 10s infinite linear
+                .top
+                    background-color: $jaune2
+                    transform: rotateX(90deg) translateZ(100px)
+                .bottom
+                    background-color: $jaune
+                    transform: rotateX(-90deg) translateZ(100px)
+                .right
+                    background-color: $vert2
+                    transform: rotateY(90deg) translateZ(100px)
+                .left
+                    background-color: $vert1
+                    transform: rotateY(-90deg) translateZ(100px)
+                .front
+                    background-color: $jaune
+                    transform: rotateX(0deg) translateZ(100px)
+                .back
+                    background-color: $vert2
+                    transform: rotateX(-180deg) translateZ(100px)
+                @keyframes spin
+                    from
+                        transform: rotateX(0deg) rotateY(0deg)
+                    to
+                        transform: rotateX(360deg) rotateY(360deg)
+                        
+                        
+
+        
+                
+            
