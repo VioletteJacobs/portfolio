@@ -5,11 +5,8 @@
         color: black
     .sectionpropos
         .photo
-
             img
                 height: 600px
-                border-right: 10px solid white
-                border-top:  10px solid white
         .presentation
             color: black
             #nom
@@ -19,10 +16,15 @@
             #languages
                 font-weight: bold
         .reseaux
-
             a
                 text-decoration: none
                 color: $jaune
+        .buttonCv
+            background-color: $jaune
+            border: none
+            border-radius: 5px
+            &:hover
+                background-color: white
     .sectionCube
         .passions
             background-color: $beige
@@ -36,7 +38,7 @@
                 height: 100%
                 position: relative
                 transform-style: preserve-3d
-                animation: spin 10s infinite linear
+                animation: spin 20s infinite linear
                 .top
                     background-color: $jaune2
                     transform: rotateX(90deg) translateZ(100px)

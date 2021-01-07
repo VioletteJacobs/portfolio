@@ -8,9 +8,10 @@
 </head>
 <body class="bodypropos">
   <header class="headerpropos">
+    <!-- navbarre -->
     <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-white flex column justify align p-4">
+          <div class="bg-dark flex column justify align p-4">
             <span class="text-muted">Accueil</span>
             <span class="text-muted">Portfolio</span>
             <span class="text-muted">À propos</span>
@@ -18,7 +19,7 @@
             <span class="text-muted"></span>
           </div>
         </div>
-        <nav class="navbar navbar-white bg-white">
+        <nav class="navbar navbar-dark bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,33 +28,58 @@
   </header>
   <section class="flex sectionpropos">
       <div class="photo padding70">
-          <img src="../public/img/photo-1506506200949-df8644f002d1.jpeg" alt="">
+        <div>
+          <img src="../public/img/photo-1506506200949-df8644f002d1.jpeg" alt="bureau">
+        </div>
       </div>
-      <div class="presentation padding70 size20 blanc">
+      <div class="presentation padding70 size20 blanc flex row">
           <h2 class="angelica jaune">À propos de moi...</h2>
           <p>Je suis 
             <span id="nom">Violette Jacobs </span> <span  id="dev">codeuse full-stack</span> formée à Molengeek ainsi qu'en autodidacte. Je maîtrise les languages clés de programmation: <span id= "languages">JavaScript, PHP, Python...</span>  Je me suis également formée eu SEO et base du branding et de la communication afin d'apporter un aspect complémentaire à mes compétences techniques. Travailleuse sociale de formation, j'ai souhaité réorienter mon parcours afin de répondre à d'autres challenges après avoir travaillé durant deux ans comme travailleuse sociale de rue. J'aime voyager, je fais de l'impro depuis 2 ans et je suis donc adepte des soirées théâtre ou cinéma.  Grande créative j'aime tout ce qui est manuel et me permet de créer des choses avec mes dix-doigts. 
           </p>
           <div class="reseaux flex justify">
-            <a href="https://www.linkedin.com/in/violette-jacobs-18a11213a/"><i class="fab fa-linkedin-in fa-2x padding10"></i></a>
-            <a href="https://github.com/VioletteJacobs"><i class="fab fa-github fa-2x padding10"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x padding10"></i></a>
+            <ul>
+              <a href="https://www.linkedin.com/in/violette-jacobs-18a11213a/"><i class="fab fa-linkedin-in fa-2x padding10"></i></a>
+              <a href="https://github.com/VioletteJacobs"><i class="fab fa-github fa-2x padding10"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x padding10"></i></a>
+            </ul>
+            <button class="buttonCv angelica justify-content-end">Télécharger mon CV</button>
+
           </div>
-          <button class="buttonCv">Télécharger mon CV</button>
       </div>
   </section>
   <!-- cube intérêt -->
   <section class="sectionCube flex">
-    <div class="row-cols-6">
+    <div class="textePassions">
       <span id="passions">Centres d'intérêts</span>
-      <div>DIY</div>
-      <div>Improvisation</div>
-      <div>Natation</div>
-      <div>Voyage</div>
-      <div>Féminisme</div>
-      <div>Écologie</div>
+      <div>
+        <h3>DIY</h3>
+        <p>Tout ce qui me permet d'exprimer ma créativité, qe ce soit la couture, le bullet journal, l'aquarelle, le tricot...</p>
+      </div>
+      <div>
+        <h3>Improvisation</h3>
+        <p>Je me suis lancée dans l'improvisation il y a deux ans pour relever un nouveau défi, apprendre de nouvelle chose et rencontrer de nouvelles persones.</p>
+      </div>
+      <div>
+        <h3>Natation</h3>
+        <p>Hyper énergique, j'ai également besoin d'une activité physique pour me dépenser et me défouler, je vais donc une à deux fois semaines à la natation.</p>
+      </div>
+      <div>
+        <h3>Voyage</h3>
+        <p>
+          J'adore découvrir de nouvelles choses et bien sûr quoi de mieux que le voyage pour sortir de sa zone de confort?!
+        </p>
     </div>
-    <div class="container row-cols-6">
+      <div>
+        <h3>Féminisme</h3>
+        <p>Grande militante, j'ai toujours été concernée par le féminisme et par les questions de genre.</p>
+      </div>
+      <div>
+        <h3>Écologie</h3>
+        <p>De même mes valeurs écologiques me guident énormément dans mon quotidien. </p>
+      </div>
+    </div>
+    <div class="container">
       <div class="cube">
         <div class="face front"><i class="fas fa-pencil-alt fa-5x blanc justify align"></i></div>
         <div class="face back"><i class="fas fa-suitcase fa-5x blanc justify align"></i></div>

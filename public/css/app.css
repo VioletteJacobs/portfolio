@@ -16026,6 +16026,14 @@ readers do not read off random characters that represent icons */
   display: flex;
 }
 
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
 .justify {
   justify-content: center;
 }
@@ -16092,7 +16100,7 @@ body {
   background-color: black;
 }
 body section {
-  height: 900px;
+  height: 800px;
 }
 body section .prenom {
   font-size: 55px;
@@ -16100,6 +16108,9 @@ body section .prenom {
 body section .propositions a {
   color: white;
   text-decoration: none;
+}
+body section .propositions a:hover {
+  color: #e3a92b;
 }
 
 .bodypropos {
@@ -16111,8 +16122,6 @@ body section .propositions a {
 }
 .bodypropos .sectionpropos .photo img {
   height: 600px;
-  border-right: 10px solid white;
-  border-top: 10px solid white;
 }
 .bodypropos .sectionpropos .presentation {
   color: black;
@@ -16130,6 +16139,14 @@ body section .propositions a {
   text-decoration: none;
   color: #e3a92b;
 }
+.bodypropos .sectionpropos .buttonCv {
+  background-color: #e3a92b;
+  border: none;
+  border-radius: 5px;
+}
+.bodypropos .sectionpropos .buttonCv:hover {
+  background-color: white;
+}
 .bodypropos .sectionCube .passions {
   background-color: #fff4cf;
 }
@@ -16144,7 +16161,7 @@ body section .propositions a {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  animation: spin 10s infinite linear;
+  animation: spin 20s infinite linear;
 }
 .bodypropos .sectionCube .container .cube .top {
   background-color: #d3a84a;
