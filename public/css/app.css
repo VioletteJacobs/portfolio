@@ -16109,8 +16109,9 @@ button {
   padding-left: 20px;
   position: relative;
   border-radius: 60px;
-  background: linear-gradient(#e7ebba, #d3a84a, #e3a92b);
+  background: linear-gradient(#e3a92b, #e6bf28, #e3a928);
   border: none;
+  overflow: hidden;
 }
 button:focus {
   outline: none;
@@ -16140,8 +16141,24 @@ body section .propositions a:hover {
 .bodypropos .headerpropos {
   color: black;
 }
-.bodypropos .sectionpropos .photo img {
+.bodypropos .sectionpropos .photo #imageContainer {
   height: 600px;
+  width: 500px;
+  position: relative;
+}
+.bodypropos .sectionpropos .photo #imageContainer img {
+  height: 100%;
+  width: 100%;
+}
+.bodypropos .sectionpropos .photo #imageContainer .transitionImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.bodypropos .sectionpropos .photo #imageContainer .transitionImage:hover {
+  opacity: 1;
 }
 .bodypropos .sectionpropos .presentation {
   color: black;
@@ -16177,10 +16194,12 @@ body section .propositions a:hover {
   0% {
     width: 0px;
     height: 0px;
+    opacity: 0.5;
   }
   100% {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
   }
 }
 .bodypropos .sectionCube .passions {
@@ -16230,6 +16249,54 @@ body section .propositions a:hover {
   to {
     transform: rotateX(360deg) rotateY(360deg);
   }
+}
+
+#bodyPortfolio {
+  box-sizing: border-box;
+  color: white;
+}
+#bodyPortfolio section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: animate 30s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+.box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 /*# sourceMappingURL=app.css.map */

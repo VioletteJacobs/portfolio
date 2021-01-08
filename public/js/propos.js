@@ -9,6 +9,9 @@ buttons.forEach(btn =>{
         effet.style.left = x + "px"
         effet.style.top = y + "px"
         this.appendChild(effet)
-        console.log(effet);
+
+        setTimeout(()=>{
+            effet.remove()
+        },1200)
     })
 })
