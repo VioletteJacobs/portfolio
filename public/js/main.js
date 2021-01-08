@@ -1,7 +1,6 @@
 let body= document.body 
 // texte animé
 let textAnimed = document.getElementById('jeSuis');
-console.log(textAnimed);
 
 let jeSuis= new Typewriter(textAnimed)
 .typeString("Je suis développeuse ")

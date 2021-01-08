@@ -16074,8 +16074,16 @@ readers do not read off random characters that represent icons */
   background-color: black;
 }
 
+.bgjaune {
+  background-color: #e3a92b;
+}
+
 .jaune {
   color: #e3a92b;
+}
+
+.transparent {
+  background-color: #1fe0;
 }
 
 .margin10 {
@@ -16094,6 +16102,18 @@ readers do not read off random characters that represent icons */
   position: absolute;
   width: 200px;
   height: 200px;
+}
+
+button {
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  border-radius: 60px;
+  background: linear-gradient(#e7ebba, #d3a84a, #e3a92b);
+  border: none;
+}
+button:focus {
+  outline: none;
 }
 
 body {
@@ -16135,17 +16155,33 @@ body section .propositions a:hover {
 .bodypropos .sectionpropos .presentation #languages {
   font-weight: bold;
 }
-.bodypropos .sectionpropos .reseaux a {
+.bodypropos .sectionpropos .reseaux ul a {
   text-decoration: none;
   color: #e3a92b;
 }
-.bodypropos .sectionpropos .buttonCv {
-  background-color: #e3a92b;
-  border: none;
-  border-radius: 5px;
+.bodypropos .sectionpropos .reseaux .buttonCv {
+  margin-left: 255px;
+  height: 60px;
+  width: 200px;
+  position: relative;
 }
-.bodypropos .sectionpropos .buttonCv:hover {
-  background-color: white;
+.bodypropos .sectionpropos .reseaux .buttonCv .spanButton {
+  position: absolute;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
 }
 .bodypropos .sectionCube .passions {
   background-color: #fff4cf;
