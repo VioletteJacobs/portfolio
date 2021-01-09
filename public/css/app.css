@@ -16202,8 +16202,11 @@ body section .propositions a:hover {
     opacity: 0;
   }
 }
-.bodypropos .sectionCube .passions {
-  background-color: #fff4cf;
+.bodypropos .sectionCube {
+  background-color: #355746;
+}
+.bodypropos .sectionCube .textePassions {
+  width: 50%;
 }
 .bodypropos .sectionCube .container {
   width: 200px;
@@ -16219,27 +16222,27 @@ body section .propositions a:hover {
   animation: spin 20s infinite linear;
 }
 .bodypropos .sectionCube .container .cube .top {
-  background-color: #d3a84a;
+  background-image: url("../../public/img/couture.jpeg");
   transform: rotateX(90deg) translateZ(100px);
 }
 .bodypropos .sectionCube .container .cube .bottom {
-  background-color: #e3a92b;
+  background-image: url("../../public/img/ecology.jpeg");
   transform: rotateX(-90deg) translateZ(100px);
 }
 .bodypropos .sectionCube .container .cube .right {
-  background-color: #355746;
+  background-image: url("../../public/img/swim.jpeg");
   transform: rotateY(90deg) translateZ(100px);
 }
 .bodypropos .sectionCube .container .cube .left {
-  background-color: #7f8b75;
+  background-image: url("../../public/img/travel.jpeg");
   transform: rotateY(-90deg) translateZ(100px);
 }
 .bodypropos .sectionCube .container .cube .front {
-  background-color: #e3a92b;
+  background-image: url("../../public/img/feminisme.jpeg");
   transform: rotateX(0deg) translateZ(100px);
 }
 .bodypropos .sectionCube .container .cube .back {
-  background-color: #355746;
+  background-image: url("../../public/img/impro.jpeg");
   transform: rotateX(-180deg) translateZ(100px);
 }
 @keyframes spin {
