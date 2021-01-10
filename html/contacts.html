@@ -6,13 +6,89 @@
     <title>Violette Jacobs</title>
     <link rel="stylesheet" href="./../public/css/app.css">
 </head>
-<body>
+<body class="bodyContacts ">
+    <header class="headerpropos">
+        <!-- navbarre -->
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="transparent flex column justify align p-4">
+                <a href="../index.html"><span class="text-muted">Accueil</span></a>
+                <a href="./portfolio.html"><span class="text-muted">Portfolio</span></a>
+                <a href="./propos.html"><span class="text-muted">À propos</span></a>
+                <a href="./cv.html"><span class="text-muted">Curriculum Vitae</span></a>
+                <a href="./contacts.html"><span class="text-muted">Contacts</span></a>
+              </div>
+            </div>
+            <nav class="navbar-dark navbar transparent ">
+              <button class="navbar-toggler justify bgjaune" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+        </div>
+      </header>
+      <section class="flex justify align">
+          <div class="container">
+              <h3 class="angelica jaune padding10">Me contacter</h3>
+              <div class="formulaire row100">
+                  <div class=" champ col padding10">
+                      <div class="inputBox">
+                          <input class="transparent" type="text" name="" required="required">
+                          <span class="text">Prénom : </span>
+                          <span class="line"></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="formulaire row100">
+                <div class=" champ col padding10">
+                    <div class="inputBox">
+                        <input class="transparent" class="transparent" type="text" name="" required="required">
+                        <span class="text">Nom : </span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="formulaire row100">
+                <div class=" champ col padding10">
+                    <div class="inputBox">
+                        <input class="transparent" type="text" name="" required="required">
+                        <span class="text">E-mail : </span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="formulaire row100">
+                <div class=" champ col padding10">
+                    <div class="inputBox">
+                        <input class="transparent" type="text" name="" required="required">
+                        <span class="text">Numéro de téléphone : </span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="formulaire row100">
+                <div class=" champ col padding10">
+                    <div class="inputBox textarea">
+                        <textarea required="required" name="" id="" cols="30" rows="10"></textarea>
+                        <span class="text">Votre message :  </span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="formulaire row100">
+                <div class=" champ col">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </div>
+
+
+          </div>
+      </section>
         <!-- Jquery -->
-	<script src="./node_modules/jquery/dist/jquery.js"></script> 
+	<script src="../node_modules/jquery/dist/jquery.js"></script> 
 	<!-- Bootstrap --> 
-	<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- js -->
-    <script src="./public/js/main.js"></script>
+    <script src="./public/js/contacts.js"></script>
 </body>
 </html>
